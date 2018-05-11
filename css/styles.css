@@ -1,22 +1,48 @@
 /*Background*/
-/*In styles.css, usethe background.svg file to create a tiled background on the body of the site, as shown on the mockup.*/
+/*In styles.css,
+use the background.svg file to create a tiled background on the body of the site, as shown on the mockup.*/
 
 
-/*Menu
+/*Menu   HTML
 Create a navigation menu to match the mockups using the supplied SVGs.
-When a user hovers over a nav menu item, use CSS to change the color of both the text AND the inline SVG.*/
+When a user hovers over a nav menu item,
+use CSS
+to change the color of both the text AND the inline SVG.*/
 
+.dog-logo {
+width: 140px;
+height: 120px;
+}
 
+.dog-template {
+  display: none;
+}
 
-/*Logo
+.dog-sable {
+  color: #b97f5b;
+}
+
+.dog-fawn {
+  color: #e9aa82;
+}
+
+.dog-red {
+  color: #834b29;
+}
+
+.dog-stone {
+  color: #52595e;
+}
+/*//Logo  HTML and CSS
 Insert the SVG logo image (logo.svg) to match the mockup using the inline SVG method.
 Ensure the logo SVG is the styled to the same size as the mockup example (140px x 120px).
-At a page width of less than 425 pixels, remove the text from the logo and add an H1 tag that contains the logo text.
+At a page width of less than 425 pixels, (media query)
+remove the text from the logo and add an H1 tag that contains the logo text.
 Be sure to use only min-width media queries.*/
 
 
-/*Dog Images
-Use the corgi.svg to create a <symbol> element for corgis in the the index.html file
+/*Dog Images/////*****   IN HTML  ****
+Use the dog.svg to create a <symbol> element for corgis in the the index.html file
 Use the <use> element to recreate four copies of the corgi svg in the layout of index.html matching the mockup
 Use the ‘currentColor’ CSS value to make the body of each corgi unique, matching the mockup*/
 
@@ -25,3 +51,67 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
 
 Add a CSS transition effect to the logo hover state.
 Add a CSS transition effect to the menu icon hover state.*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background-color: #edeff0;
+  background-image: url(../svgs/background.svg);
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
