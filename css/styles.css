@@ -1,7 +1,7 @@
 /*Background*/
+
 /*In styles.css,
 use the background.svg file to create a tiled background on the body of the site, as shown on the mockup.*/
-
 
 /*Menu   HTML
 Create a navigation menu to match the mockups using the supplied SVGs.
@@ -10,8 +10,8 @@ use CSS
 to change the color of both the text AND the inline SVG.*/
 
 .dog-logo {
-width: 140px;
-height: 120px;
+  width: 140px;
+  height: 120px;
 }
 
 .dog-template {
@@ -33,6 +33,119 @@ height: 120px;
 .dog-stone {
   color: #52595e;
 }
+
+.middle-pad {
+  stroke: #F4C6A6;
+  stroke-width: 2;
+  stroke-dasharray: 60.483;
+  stroke-dashoffset: 60.483;
+  animation: offset 3s linear forwards, fill-it .8s 3s forwards;
+}
+
+.bottom-pad {
+  stroke: #F4C6A6;
+  stroke-width: 2;
+  stroke-dasharray: 140.317;
+  stroke-dashoffset: 140.317;
+  animation: offset 3s linear forwards, fill-it .8s 3s forwards;
+}
+
+.right-pad, .left-pad {
+  stroke: #F4C6A6;
+  stroke-width: 2;
+  stroke-dasharray: 60.457;
+  stroke-dashoffset: 60.457;
+  animation: offset 3s linear forwards, fill-it .8s 3s forwards;
+}
+
+.logo-background {
+  fill: #BA8058;
+  animation: logo-fill 4s linear forwards;
+}
+.lt1,.lt2,.lt3,.lt4,.lt5,.lt6,.lt7,.lt8,.lt9,.lt10,.lt11,.lt12,.lt13,.lt14,.lt15{
+  fill: #EAAA7F;
+}
+
+.lt1 {
+  animation: letter-show 1.5s linear .2s;
+}
+.lt2 {
+  animation: letter-show 1.5s linear .4s;
+}
+.lt3 {
+  animation: letter-show 1.5s linear .6s;
+}
+.lt4 {
+  animation: letter-show 1.5s linear .8s;
+}
+.lt5 {
+  animation: letter-show 1.5s linear 1s;
+}
+.lt6 {
+  animation: letter-show 1.5s linear 1.2s;
+}
+.lt7 {
+  animation: letter-show 1.5s linear 1.4s;
+}
+.lt8 {
+  animation: letter-show 1.5s linear 1.6s;
+}
+.lt9 {
+  animation: letter-show 1.5s linear 1.8s;
+}
+.lt10 {
+  animation: letter-show 1.5s linear 2s;
+}
+.lt11 {
+  animation: letter-show 1.5s linear 2.2s;
+}
+.lt12 {
+  animation: letter-show 1.5s linear 2.4s;
+}
+.lt13 {
+  animation: letter-show 1.5s linear 2.6s;
+}
+.lt14 {
+  animation: letter-show 1.5s linear 2.8s;
+}
+.lt15 {
+  animation: letter-show 1.5s linear 3s;
+}
+
+@keyframes letter-show {
+  0% {
+     fill: #7c5133;
+  }
+  100% {
+    fill: #EAAA7F;
+  }
+}
+
+
+@keyframes logo-fill {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: #F4C6A6;
+  }
+}
+
 /*//Logo  HTML and CSS
 Insert the SVG logo image (logo.svg) to match the mockup using the inline SVG method.
 Ensure the logo SVG is the styled to the same size as the mockup example (140px x 120px).
@@ -40,12 +153,10 @@ At a page width of less than 425 pixels, (media query)
 remove the text from the logo and add an H1 tag that contains the logo text.
 Be sure to use only min-width media queries.*/
 
-
 /*Dog Images/////*****   IN HTML  ****
 Use the dog.svg to create a <symbol> element for corgis in the the index.html file
 Use the <use> element to recreate four copies of the corgi svg in the layout of index.html matching the mockup
 Use the ‘currentColor’ CSS value to make the body of each corgi unique, matching the mockup*/
-
 
 /*exceeds
 
@@ -67,7 +178,8 @@ body {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
-  height: 100%; /* new line */
+  height: 100%;
+  /* new line */
 }
 
 p {
