@@ -22,17 +22,21 @@ ul {
 }
 
 .heart:hover .st0 {
-  transform: scale(1.2);
+  transform: scale(.9);
+  transform-origin: 50% 50%;
   fill:red;
 }
 
 .contact:hover .st0 {
-  transform: scale(1.2);
-  fill:#b97f5b;
+  transform: scale(.9);
+  transform-origin: 50% 50%;
+  fill: #b97f5b;
 }
 .location:hover .st0 {
-  transform: scale(1.2);
-  fill:#52595e;
+  transform: scale(.9);
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  fill: #52595e;
 }
 
 h1:hover {
@@ -43,7 +47,6 @@ h1:hover {
 }
 h2:hover {
   color:#b97f5b;
-  text-decoration: underline;
 }
 /*Dog Images/////*****   IN HTML  ****
 Use the dog.svg to create a <symbol> element for corgis in the the index.html file
@@ -250,11 +253,50 @@ Be sure to use only min-width media queries.*/
   }
 }
 
+@keyframes paw-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.paw-template {
+  display: none;
+}
 
-/*exceeds
+section svg {
+  width: 50px;
+  height: 50px;
+}
 
-Add a CSS transition effect to the logo hover state.
-Add a CSS transition effect to the menu icon hover state.*/
+.paw-1, .paw-2 {
+  fill: #F4C6A6;
+}
+
+.test2 {
+  animation: paw-fade 5s linear forwards infinite;
+  transform: rotate(5deg);
+}
+
+.test {
+  animation: paw-fade 7s linear forwards infinite;
+  transform: translate(10px,35px) rotate(5deg);
+}
+
+
+.footer-paw {
+  width: 25px;
+  height: 25px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0;
+}
 
 body {
   margin: 0;
