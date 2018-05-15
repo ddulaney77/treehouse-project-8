@@ -4,25 +4,35 @@ Create a navigation menu to match the mockups using the supplied SVGs.
 When a user hovers over a nav menu item,
 use CSS
 to change the color of both the text AND the inline SVG.*/
-
-.nav ul li {
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
-.heart-icon:hover .st0 {
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.heart:hover .st0 {
   transform: scale(1.2);
   fill:red;
 }
 
-.contact-icon:hover .st0 {
+.contact:hover .st0 {
   transform: scale(1.2);
-  fill:#b97f5b
+  fill:#b97f5b;
 }
-.location-icon:hover .st0 {
+.location:hover .st0 {
   transform: scale(1.2);
-  fill:#52595e
+  fill:#52595e;
 }
 
 h1:hover {
@@ -112,6 +122,7 @@ Be sure to use only min-width media queries.*/
   fill: #EAAA7F;
 }
 
+
 .lt1 {
   animation: letter-show 1.5s linear .2s;
 }
@@ -156,6 +167,53 @@ Be sure to use only min-width media queries.*/
 }
 .lt15 {
   animation: letter-show 1.5s linear 3s;
+}
+
+
+.dog-logo:hover .lt1 {
+  animation: letter-show 1.5s linear .2s infinite;
+}
+.dog-logo:hover .lt2 {
+  animation: letter-show 1.5s linear .4s infinite;
+}
+.dog-logo:hover .lt3 {
+  animation: letter-show 1.5s linear .6s infinite;
+}
+.dog-logo:hover .lt4 {
+  animation: letter-show 1.5s linear .8s infinite;
+}
+.dog-logo:hover .lt5 {
+  animation: letter-show 1.5s linear 1s infinite;
+}
+.dog-logo:hover .lt6 {
+  animation: letter-show 1.5s linear 1.2s infinite;
+}
+.dog-logo:hover .lt7 {
+  animation: letter-show 1.5s linear 1.4s infinite;
+}
+.dog-logo:hover .lt8 {
+  animation: letter-show 1.5s linear 1.6s infinite;
+}
+.dog-logo:hover .lt9 {
+  animation: letter-show 1.5s linear 1.8s infinite;
+}
+.dog-logo:hover .lt10 {
+  animation: letter-show 1.5s linear 2s infinite;
+}
+.dog-logo:hover .lt11 {
+  animation: letter-show 1.5s linear 2.2s infinite;
+}
+.dog-logo:hover .lt12 {
+  animation: letter-show 1.5s linear 2.4s infinite;
+}
+.dog-logo:hover .lt13 {
+  animation: letter-show 1.5s linear 2.6s infinite;
+}
+.dog-logo:hover .lt14 {
+  animation: letter-show 1.5s linear 2.8s infinite;
+}
+.dog-logo:hover .lt15 {
+  animation: letter-show 1.5s linear 3s infinite;
 }
 
 @keyframes letter-show {
