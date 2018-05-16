@@ -8,11 +8,6 @@ to change the color of both the text AND the inline SVG.*/
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-}
-
 li {
   list-style: none;
 }
@@ -20,25 +15,101 @@ li {
 ul {
   padding: 0;
 }
+footer p {
+  text-align: center;
+  margin-top: 0;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background-color: #edeff0;
+  background-image: url(../svgs/background.svg);
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%;
+  /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+ a:hover{
+  color: #b97f5b;
+  text-decoration: underline;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*nav svgs*/
 .heart:hover .st0 {
-  transform: scale(.9);
   transform-origin: 50% 50%;
   fill:red;
+  animation: heart 1s ease-out forwards;
 }
 
 .contact:hover .st0 {
-  transform: scale(.9);
+  transform: scale(.80);
   transform-origin: 50% 50%;
   fill: #b97f5b;
+  transform: rotate(180deg);
+  stroke: black;
+  stroke-width: 2;
 }
 .location:hover .st0 {
-  transform: scale(.9);
+  transform: scale(.80);
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  fill: #52595e;
+  fill:  #e9aa82;
+  stroke: black;
+  stroke-width: 2;
 }
-
+/*titles*/
 h1:hover {
   transform: scale(1.1);
   color: #b97f5b;
@@ -48,10 +119,6 @@ h1:hover {
 h2:hover {
   color:#b97f5b;
 }
-/*Dog Images/////*****   IN HTML  ****
-Use the dog.svg to create a <symbol> element for corgis in the the index.html file
-Use the <use> element to recreate four copies of the corgi svg in the layout of index.html matching the mockup
-Use the ‘currentColor’ CSS value to make the body of each corgi unique, matching the mockup*/
 
 .dog-logo {
   width: 140px;
@@ -61,11 +128,10 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
 .dog-template {
   display: none;
 }
-
+/*dog face colors*/
 .dog-sable {
   color: #b97f5b;
 }
-
 
 .dog-fawn {
   color: #e9aa82;
@@ -78,7 +144,7 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
 .dog-stone {
   color: #52595e;
 }
-
+/*main dog logo*/
 .middle-pad {
   stroke: #F4C6A6;
   stroke-width: 2;
@@ -86,6 +152,10 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
   stroke-dashoffset: 60.483;
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
+
+/*.middle-pad:hover{
+  animation: heart 1s ease-out forwards;
+}*/
 
 .bottom-pad {
   stroke: #F4C6A6;
@@ -95,7 +165,12 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
 
-.right-pad, .left-pad {
+.bottom-pad:hover {
+  animation: heart 1s ease-out;
+}
+
+.right-pad,
+.left-pad {
   stroke: #F4C6A6;
   stroke-width: 2;
   stroke-dasharray: 60.457;
@@ -103,28 +178,20 @@ Use the ‘currentColor’ CSS value to make the body of each corgi unique, matc
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
 
-/*Background*/
-
-/*In styles.css,
-use the background.svg file to create a tiled background on the body of the site, as shown on the mockup.*/
+/*.right-pad,
+.left-pad:hover {
+animation: heart 1s ease-out;
+}*/
 
 .logo-background {
   fill: #BA8058;
   animation: logo-fill 4s linear forwards;
 }
 
-/*//Logo  HTML and CSS
-Insert the SVG logo image (logo.svg) to match the mockup using the inline SVG method.
-Ensure the logo SVG is the styled to the same size as the mockup example (140px x 120px).
-At a page width of less than 425 pixels, (media query)
-remove the text from the logo and add an H1 tag that contains the logo text.
-Be sure to use only min-width media queries.*/
-
-
+/*letters in logo*/
 .lt1,.lt2,.lt3,.lt4,.lt5,.lt6,.lt7,.lt8,.lt9,.lt10,.lt11,.lt12,.lt13,.lt14,.lt15{
   fill: #EAAA7F;
 }
-
 
 .lt1 {
   animation: letter-show 1.5s linear .2s;
@@ -172,7 +239,7 @@ Be sure to use only min-width media queries.*/
   animation: letter-show 1.5s linear 3s;
 }
 
-
+/*letters on hover*/
 .dog-logo:hover .lt1 {
   animation: letter-show 1.5s linear .2s infinite;
 }
@@ -217,6 +284,18 @@ Be sure to use only min-width media queries.*/
 }
 .dog-logo:hover .lt15 {
   animation: letter-show 1.5s linear 3s infinite;
+}
+/*keyframes and animation*/
+@keyframes heart {
+  0%{
+    transform: scale(0);
+  }
+  30% {
+      transform: scale(1.1);
+  }
+  60% {
+    transform: scale(.9);
+  }
 }
 
 @keyframes letter-show {
@@ -267,7 +346,7 @@ Be sure to use only min-width media queries.*/
 .paw-template {
   display: none;
 }
-
+/*extra paws*/
 section svg {
   width: 50px;
   height: 50px;
@@ -287,78 +366,25 @@ section svg {
   transform: translate(10px,35px) rotate(5deg);
 }
 
-
 .footer-paw {
   width: 25px;
   height: 25px;
+  fill: #F4C6A6;
+  animation: paw-fade 5s linear forwards infinite;
 }
 
-footer p {
-  text-align: center;
-  margin-top: 0;
+/*span {
+
+}
+/*media queries*/
+/*@media (min-width:425px){
+
+
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #111;
-  background-color: #edeff0;
-  background-image: url(../svgs/background.svg);
-}
 
-#container {
-  max-width: 960px;
-  background: #fff;
-  margin: 0 auto;
-  height: 100%;
-  /* new line */
-}
+@media (min-width:1025){
 
-p {
-  max-width: 350px;
-  margin: 35px auto 0;
-  line-height: 2em;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-  color: #39add1;
-  font-weight: 700;
-}
-
-a:hover {
-  color:  #e9aa82;
-}
-
-header {
-  padding-top: 10px;
-}
-
-header nav {
-  padding-bottom: 50px;
-  text-align: left;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-main {
-  padding-top: 50px;
-}
-
-main h2 {
-  font-size: 28px;
-}
-
-footer {
-  width: 100%;
-  margin-top: 100px;
-  padding-bottom: 30px;
-  color: #ba8058;
-}
+}*/
+/*remove the text from the logo and add an H1 tag that contains the logo text.
+Be sure to use only min-width media queries.*/
