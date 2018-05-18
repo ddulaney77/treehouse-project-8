@@ -1,9 +1,3 @@
-
-/*Menu   HTML
-Create a navigation menu to match the mockups using the supplied SVGs.
-When a user hovers over a nav menu item,
-use CSS
-to change the color of both the text AND the inline SVG.*/
 * {
   box-sizing: border-box;
 }
@@ -19,6 +13,7 @@ footer p {
   text-align: center;
   margin-top: 0;
 }
+
 
 body {
   margin: 0;
@@ -36,6 +31,7 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%;
+  padding:10px;
   /* new line */
 }
 
@@ -53,7 +49,7 @@ a {
 }
 
  a:hover{
-  color: #b97f5b;
+
   text-decoration: underline;
 }
 
@@ -85,12 +81,23 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+.dog-faces li span {
+  text-align: center;
+  display: block;
+  margin-left: -30px;
+  margin-top: 15px;
+}
 
 /*nav svgs*/
-.heart:hover .st0 {
-  transform-origin: 50% 50%;
+.fav:hover .heart .st0,.fav:hover a {
   fill:red;
-  animation: heart 1s ease-out forwards;
+  color: #b97f5b;
+}
+.heart .st0 {
+  transform-origin: 50% 50%;
+  transform: scale(1.1);
+  fill:#39ADD1;
+  animation: heart 2.5s ease-out forwards infinite;
 }
 
 .contact:hover .st0 {
@@ -109,8 +116,14 @@ footer {
   stroke: black;
   stroke-width: 2;
 }
+
+
 /*titles*/
-h1:hover {
+.title{
+  font-size: 22px;
+
+}
+.title:hover {
   transform: scale(1.1);
   color: #b97f5b;
   text-decoration: underline;
@@ -119,12 +132,24 @@ h1:hover {
 h2:hover {
   color:#b97f5b;
 }
-
+.logo {
+  margin-bottom: 35px;
+}
 .dog-logo {
   width: 140px;
   height: 120px;
 }
+.logo-svg-text {
+  display:none;
+}
 
+.logo-header-text {
+  line-height: 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: -5px;
+  color:#EAAA7F;
+}
 .dog-template {
   display: none;
 }
@@ -144,6 +169,7 @@ h2:hover {
 .dog-stone {
   color: #52595e;
 }
+
 /*main dog logo*/
 .middle-pad {
   stroke: #F4C6A6;
@@ -153,20 +179,12 @@ h2:hover {
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
 
-/*.middle-pad:hover{
-  animation: heart 1s ease-out forwards;
-}*/
-
 .bottom-pad {
   stroke: #F4C6A6;
   stroke-width: 2;
   stroke-dasharray: 140.317;
   stroke-dashoffset: 140.317;
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
-}
-
-.bottom-pad:hover {
-  animation: heart 1s ease-out;
 }
 
 .right-pad,
@@ -177,11 +195,6 @@ h2:hover {
   stroke-dashoffset: 60.457;
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
-
-/*.right-pad,
-.left-pad:hover {
-animation: heart 1s ease-out;
-}*/
 
 .logo-background {
   fill: #BA8058;
@@ -307,7 +320,6 @@ animation: heart 1s ease-out;
   }
 }
 
-
 @keyframes logo-fill {
   0% {
     opacity: 0;
@@ -343,9 +355,44 @@ animation: heart 1s ease-out;
     opacity: 0;
   }
 }
+
+@keyframes head-tilt {
+  0% {
+    transform: rotate(-12.5deg);
+  }
+  25% {
+    transform: rotate(-35deg);
+  }
+  75% {
+    transform: rotate(12.5deg);
+  }
+  100% {
+    transform:rotate(0);
+  }
+}
 .paw-template {
   display: none;
 }
+
+.dog-stone-svg, .dog-red-svg, .dog-fawn-svg, .dog-sable-svg{
+  transform-origin: 50% 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+.dog-stone-svg:hover {
+  animation: head-tilt 2s linear forwards;
+}
+.dog-red-svg:hover {
+  animation: head-tilt 2s linear forwards;
+}
+.dog-fawn-svg:hover {
+  animation: head-tilt 2s linear forwards;
+}
+.dog-sable-svg:hover {
+  animation: head-tilt 2s linear forwards;
+}
+
 /*extra paws*/
 section svg {
   width: 50px;
@@ -370,21 +417,37 @@ section svg {
   width: 25px;
   height: 25px;
   fill: #F4C6A6;
-  animation: paw-fade 5s linear forwards infinite;
+  animation: paw-fade 3s linear forwards infinite;
 }
 
-/*span {
+span {
+  text-align: center;
+font-family: roboto;
+font-weight: 300;
+font-size: 16px;
+color:#e9aa82;
+}
+
+span:hover {
+  color:#52595e;
+  cursor: pointer;
 
 }
-/*media queries*/
-/*@media (min-width:425px){
 
-
+@media (min-width:425px){
+  .logo-svg-text{
+    display:inline;
+  }
+  .logo-header-text {
+    display: none;
+  }
 }
 
 
-@media (min-width:1025){
+@media (min-width:768px){
+.dog-faces li {
+  display: inline-block;
+  padding: 0 5px;
+}
 
-}*/
-/*remove the text from the logo and add an H1 tag that contains the logo text.
-Be sure to use only min-width media queries.*/
+}
