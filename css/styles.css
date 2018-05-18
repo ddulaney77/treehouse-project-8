@@ -89,8 +89,16 @@ footer {
 }
 
 /*nav svgs*/
-.fav:hover .heart .st0,.fav:hover a {
-  fill:red;
+.fav:hover .heart .st0, .fav:hover a {
+fill:red;
+color: #b97f5b;
+}
+
+.con:hover .heart .st0, .con:hover a {
+color: #b97f5b;
+}
+
+.loc:hover .heart .st0,.loc:hover a {
   color: #b97f5b;
 }
 .heart .st0 {
@@ -431,6 +439,7 @@ color:#e9aa82;
 span:hover {
   color:#52595e;
   cursor: pointer;
+  transform:scale(1.1);
 
 }
 
@@ -441,6 +450,7 @@ span:hover {
   .logo-header-text {
     display: none;
   }
+
 }
 
 
@@ -449,5 +459,18 @@ span:hover {
   display: inline-block;
   padding: 0 5px;
 }
-
+.dog-faces:hover li {
+  cursor:pointer;
+}
+.dog-logo:hover {
+  cursor: pointer;
+  animation: heart 1.5s linear forwards;
+}
+.middle-pad:hover,
+.left-pad:hover,
+.right-pad:hover,
+.bottom-pad:hover {
+  stroke: #52595e;
+  stroke-width:1px;
+}
 }
