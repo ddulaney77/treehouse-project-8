@@ -94,13 +94,17 @@ fill:red;
 color: #b97f5b;
 }
 
-.con:hover .heart .st0, .con:hover a {
-color: #b97f5b;
+.con:hover .contact .st0, .con:hover a {
+fill: #834b29;
+color:  #b97f5b;
 }
 
-.loc:hover .heart .st0,.loc:hover a {
+.loc:hover .location .st0, .loc:hover a {
+  fill:#834b29;
   color: #b97f5b;
+
 }
+
 .heart .st0 {
   transform-origin: 50% 50%;
   transform: scale(1.1);
@@ -109,18 +113,16 @@ color: #b97f5b;
 }
 
 .contact:hover .st0 {
-  transform: scale(.80);
   transform-origin: 50% 50%;
-  fill: #b97f5b;
+  transform: scale(.80);
   transform: rotate(180deg);
   stroke: black;
   stroke-width: 2;
 }
 .location:hover .st0 {
+  transform-origin: 50% 50%;
   transform: scale(.80);
   transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  fill:  #e9aa82;
   stroke: black;
   stroke-width: 2;
 }
@@ -471,6 +473,6 @@ span:hover {
 .right-pad:hover,
 .bottom-pad:hover {
   stroke: #52595e;
-  stroke-width:1px;
+  stroke-width:2px;
 }
 }
