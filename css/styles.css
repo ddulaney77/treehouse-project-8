@@ -4,15 +4,18 @@
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 ul {
   padding: 0;
+  margin: auto;
 }
 footer p {
   text-align: center;
   margin-top: 0;
 }
+
 
 
 body {
@@ -46,10 +49,10 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  font-size: 12px;
 }
 
  a:hover{
-
   text-decoration: underline;
 }
 
@@ -58,13 +61,14 @@ header {
 }
 
 header nav {
-  padding-bottom: 50px;
-  text-align: left;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-left:17px;
 }
 
 header nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 main {
@@ -81,6 +85,7 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
 .dog-faces li span {
   text-align: center;
   display: block;
@@ -88,21 +93,30 @@ footer {
   margin-top: 15px;
 }
 
-/*nav svgs*/
+/*nav svgs and text together*/
 .fav:hover .heart .st0, .fav:hover a {
 fill:red;
 color: #b97f5b;
 }
 
 .con:hover .contact .st0, .con:hover a {
-fill: #834b29;
+  fill: #e9aa82;
 color:  #b97f5b;
+transform-origin: 50% 50%;
+transform: scale(.80);
+transform: rotate(180deg);
+stroke: black;
+stroke-width: 2;
 }
 
 .loc:hover .location .st0, .loc:hover a {
-  fill:#834b29;
+  fill:#e9aa82;
   color: #b97f5b;
-
+  transform-origin: 50% 50%;
+  transform: scale(.80);
+  transform: rotate(-90deg);
+  stroke: black;
+  stroke-width: 2;
 }
 
 .heart .st0 {
@@ -111,22 +125,6 @@ color:  #b97f5b;
   fill:#39ADD1;
   animation: heart 2.5s ease-out forwards infinite;
 }
-
-.contact:hover .st0 {
-  transform-origin: 50% 50%;
-  transform: scale(.80);
-  transform: rotate(180deg);
-  stroke: black;
-  stroke-width: 2;
-}
-.location:hover .st0 {
-  transform-origin: 50% 50%;
-  transform: scale(.80);
-  transform: rotate(-90deg);
-  stroke: black;
-  stroke-width: 2;
-}
-
 
 /*titles*/
 .title{
@@ -142,6 +140,7 @@ color:  #b97f5b;
 h2:hover {
   color:#b97f5b;
 }
+
 .logo {
   margin-bottom: 35px;
 }
@@ -163,6 +162,7 @@ h2:hover {
 .dog-template {
   display: none;
 }
+
 /*dog face colors*/
 .dog-sable {
   color: #b97f5b;
@@ -179,6 +179,11 @@ h2:hover {
 .dog-stone {
   color: #52595e;
 }
+
+.nose_and_eyes{color:#2D3339;}
+.brows{color:#DA8058;}
+.white{color:#FBFEFF;}
+
 
 /*main dog logo*/
 .middle-pad {
@@ -212,7 +217,7 @@ h2:hover {
 }
 
 /*letters in logo*/
-.lt1,.lt2,.lt3,.lt4,.lt5,.lt6,.lt7,.lt8,.lt9,.lt10,.lt11,.lt12,.lt13,.lt14,.lt15{
+.lt1,.lt2,.lt3,.lt4,.lt5,.lt6,.lt7,.lt8,.lt9,.lt10,.lt11,.lt12,.lt13,.lt14,.lt15 {
   fill: #EAAA7F;
 }
 
@@ -264,50 +269,64 @@ h2:hover {
 
 /*letters on hover*/
 .dog-logo:hover .lt1 {
-  animation: letter-show 1.5s linear .2s infinite;
+  animation: letter-show 3s linear .2s infinite;
 }
 .dog-logo:hover .lt2 {
-  animation: letter-show 1.5s linear .4s infinite;
+  animation: letter-show 3s linear .4s infinite;
 }
 .dog-logo:hover .lt3 {
-  animation: letter-show 1.5s linear .6s infinite;
+  animation: letter-show 3s linear .6s infinite;
 }
 .dog-logo:hover .lt4 {
-  animation: letter-show 1.5s linear .8s infinite;
+  animation: letter-show 3s linear .8s infinite;
 }
 .dog-logo:hover .lt5 {
-  animation: letter-show 1.5s linear 1s infinite;
+  animation: letter-show 3s linear 1s infinite;
 }
 .dog-logo:hover .lt6 {
-  animation: letter-show 1.5s linear 1.2s infinite;
+  animation: letter-show 3s linear 1.2s infinite;
 }
 .dog-logo:hover .lt7 {
-  animation: letter-show 1.5s linear 1.4s infinite;
+  animation: letter-show 3s linear 1.4s infinite;
 }
 .dog-logo:hover .lt8 {
-  animation: letter-show 1.5s linear 1.6s infinite;
+  animation: letter-show 3s linear 1.6s infinite;
 }
 .dog-logo:hover .lt9 {
-  animation: letter-show 1.5s linear 1.8s infinite;
+  animation: letter-show 3s linear 1.8s infinite;
 }
 .dog-logo:hover .lt10 {
-  animation: letter-show 1.5s linear 2s infinite;
+  animation: letter-show 3s linear 2s infinite;
 }
 .dog-logo:hover .lt11 {
-  animation: letter-show 1.5s linear 2.2s infinite;
+  animation: letter-show 3s linear 2.2s infinite;
 }
 .dog-logo:hover .lt12 {
-  animation: letter-show 1.5s linear 2.4s infinite;
+  animation: letter-show 3s linear 2.4s infinite;
 }
 .dog-logo:hover .lt13 {
-  animation: letter-show 1.5s linear 2.6s infinite;
+  animation: letter-show 3s linear 2.6s infinite;
 }
 .dog-logo:hover .lt14 {
-  animation: letter-show 1.5s linear 2.8s infinite;
+  animation: letter-show 3s linear 2.7s infinite;
 }
 .dog-logo:hover .lt15 {
-  animation: letter-show 1.5s linear 3s infinite;
+  animation: letter-show 3s linear 2.8s infinite;
 }
+
+.dog-logo:hover .paw-set{
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  animation: heart 2s linear .5s forwards;
+}
+
+/*.middle-pad:hover,
+.left-pad:hover,
+.right-pad:hover,
+.bottom-pad:hover {
+}*/
+
+
 /*keyframes and animation*/
 @keyframes heart {
   0%{
@@ -380,6 +399,28 @@ h2:hover {
     transform:rotate(0);
   }
 }
+
+@keyframes pads {
+  0% {
+    stroke: red;
+    stroke-width:2px;
+  }
+}
+@keyframes brows {
+  0% {
+    transform: skewY(2deg);
+  }
+  /*30% {
+    transform: translateY(-5deg);
+  }
+  60% {
+    transform: translateY(-10deg);
+  }*/
+
+  100% {
+    transform: skewY(-10deg);
+  }
+}
 .paw-template {
   display: none;
 }
@@ -393,6 +434,12 @@ h2:hover {
 .dog-stone-svg:hover {
   animation: head-tilt 2s linear forwards;
 }
+
+ .dog-template .brows {
+  color: red;
+  transform: skewY(-10deg);
+}
+
 .dog-red-svg:hover {
   animation: head-tilt 2s linear forwards;
 }
@@ -464,15 +511,11 @@ span:hover {
 .dog-faces:hover li {
   cursor:pointer;
 }
-.dog-logo:hover {
-  cursor: pointer;
-  animation: heart 1.5s linear forwards;
+header nav {
+  text-align: left;
 }
-.middle-pad:hover,
-.left-pad:hover,
-.right-pad:hover,
-.bottom-pad:hover {
-  stroke: #52595e;
-  stroke-width:2px;
+a {
+  font-size: 14px;
 }
+
 }
