@@ -11,12 +11,11 @@ ul {
   padding: 0;
   margin: auto;
 }
+
 footer p {
   text-align: center;
   margin-top: 0;
 }
-
-
 
 body {
   margin: 0;
@@ -34,7 +33,7 @@ body {
   background: #fff;
   margin: 0 auto;
   height: 100%;
-  padding:10px;
+  padding: 10px;
   /* new line */
 }
 
@@ -52,7 +51,7 @@ a {
   font-size: 12px;
 }
 
- a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -63,7 +62,7 @@ header {
 header nav {
   padding-bottom: 40px;
   text-align: center;
-  margin-left:17px;
+  margin-left: 17px;
 }
 
 header nav ul li {
@@ -95,22 +94,22 @@ footer {
 
 /*nav svgs and text together*/
 .fav:hover .heart .st0, .fav:hover a {
-fill:red;
-color: #b97f5b;
+  fill: red;
+  color: #b97f5b;
 }
 
 .con:hover .contact .st0, .con:hover a {
   fill: #e9aa82;
-color:  #b97f5b;
-transform-origin: 50% 50%;
-transform: scale(.80);
-transform: rotate(180deg);
-stroke: black;
-stroke-width: 2;
+  color: #b97f5b;
+  transform-origin: 50% 50%;
+  transform: scale(.80);
+  transform: rotate(180deg);
+  stroke: black;
+  stroke-width: 2;
 }
 
 .loc:hover .location .st0, .loc:hover a {
-  fill:#e9aa82;
+  fill: #e9aa82;
   color: #b97f5b;
   transform-origin: 50% 50%;
   transform: scale(.80);
@@ -122,34 +121,36 @@ stroke-width: 2;
 .heart .st0 {
   transform-origin: 50% 50%;
   transform: scale(1.1);
-  fill:#39ADD1;
+  fill: #39ADD1;
   animation: heart 2.5s ease-out forwards infinite;
 }
 
 /*titles*/
-.title{
+.title {
   font-size: 22px;
-
 }
+
 .title:hover {
   transform: scale(1.1);
   color: #b97f5b;
   text-decoration: underline;
-
 }
+
 h2:hover {
-  color:#b97f5b;
+  color: #b97f5b;
 }
 
 .logo {
   margin-bottom: 35px;
 }
+
 .dog-logo {
   width: 140px;
   height: 120px;
 }
+
 .logo-svg-text {
-  display:none;
+  display: none;
 }
 
 .logo-header-text {
@@ -157,10 +158,11 @@ h2:hover {
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: -5px;
-  color:#EAAA7F;
+  color: #EAAA7F;
 }
+
 .dog-template {
-  display: none;
+  height: 0;
 }
 
 /*dog face colors*/
@@ -180,10 +182,22 @@ h2:hover {
   color: #52595e;
 }
 
-.nose_and_eyes{color:#2D3339;}
-.brows{color:#DA8058;}
-.white{color:#FBFEFF;}
+.nose_and_eyes {
+  color: #2D3339;
+}
 
+.brows {
+  color: inherit;
+}
+
+.white {
+  color: #FBFEFF;
+}
+
+.brows {
+  color: tan;
+  animation: brows 2s linear forwards infinite;
+}
 
 /*main dog logo*/
 .middle-pad {
@@ -202,8 +216,7 @@ h2:hover {
   animation: offset 3s linear forwards, fill-it .8s 3s forwards;
 }
 
-.right-pad,
-.left-pad {
+.right-pad, .left-pad {
   stroke: #F4C6A6;
   stroke-width: 2;
   stroke-dasharray: 60.457;
@@ -216,53 +229,66 @@ h2:hover {
   animation: logo-fill 4s linear forwards;
 }
 
-/*letters in logo*/
-.lt1,.lt2,.lt3,.lt4,.lt5,.lt6,.lt7,.lt8,.lt9,.lt10,.lt11,.lt12,.lt13,.lt14,.lt15 {
+.lt1, .lt2, .lt3, .lt4, .lt5, .lt6, .lt7, .lt8, .lt9, .lt10, .lt11, .lt12, .lt13, .lt14, .lt15 {
   fill: #EAAA7F;
 }
 
 .lt1 {
   animation: letter-show 1.5s linear .2s;
 }
+
 .lt2 {
   animation: letter-show 1.5s linear .4s;
 }
+
 .lt3 {
   animation: letter-show 1.5s linear .6s;
 }
+
 .lt4 {
   animation: letter-show 1.5s linear .8s;
 }
+
 .lt5 {
   animation: letter-show 1.5s linear 1s;
 }
+
 .lt6 {
   animation: letter-show 1.5s linear 1.2s;
 }
+
 .lt7 {
   animation: letter-show 1.5s linear 1.4s;
 }
+
 .lt8 {
   animation: letter-show 1.5s linear 1.6s;
 }
+
 .lt9 {
   animation: letter-show 1.5s linear 1.8s;
 }
+
 .lt10 {
   animation: letter-show 1.5s linear 2s;
 }
+
 .lt11 {
   animation: letter-show 1.5s linear 2.2s;
 }
+
 .lt12 {
   animation: letter-show 1.5s linear 2.4s;
 }
+
 .lt13 {
   animation: letter-show 1.5s linear 2.6s;
 }
+
 .lt14 {
   animation: letter-show 1.5s linear 2.8s;
 }
+
 .lt15 {
   animation: letter-show 1.5s linear 3s;
 }
@@ -271,69 +297,76 @@ h2:hover {
 .dog-logo:hover .lt1 {
   animation: letter-show 3s linear .2s infinite;
 }
+
 .dog-logo:hover .lt2 {
   animation: letter-show 3s linear .4s infinite;
 }
+
 .dog-logo:hover .lt3 {
   animation: letter-show 3s linear .6s infinite;
 }
+
 .dog-logo:hover .lt4 {
   animation: letter-show 3s linear .8s infinite;
 }
+
 .dog-logo:hover .lt5 {
   animation: letter-show 3s linear 1s infinite;
 }
+
 .dog-logo:hover .lt6 {
   animation: letter-show 3s linear 1.2s infinite;
 }
+
 .dog-logo:hover .lt7 {
   animation: letter-show 3s linear 1.4s infinite;
 }
+
 .dog-logo:hover .lt8 {
   animation: letter-show 3s linear 1.6s infinite;
 }
+
 .dog-logo:hover .lt9 {
   animation: letter-show 3s linear 1.8s infinite;
 }
+
 .dog-logo:hover .lt10 {
   animation: letter-show 3s linear 2s infinite;
 }
+
 .dog-logo:hover .lt11 {
   animation: letter-show 3s linear 2.2s infinite;
 }
+
 .dog-logo:hover .lt12 {
   animation: letter-show 3s linear 2.4s infinite;
 }
+
 .dog-logo:hover .lt13 {
   animation: letter-show 3s linear 2.6s infinite;
 }
+
 .dog-logo:hover .lt14 {
   animation: letter-show 3s linear 2.7s infinite;
 }
+
 .dog-logo:hover .lt15 {
   animation: letter-show 3s linear 2.8s infinite;
 }
 
-.dog-logo:hover .paw-set{
+.dog-logo:hover .paw-set {
   transform-origin: 50% 50%;
   cursor: pointer;
   animation: heart 2s linear .5s forwards;
 }
 
-/*.middle-pad:hover,
-.left-pad:hover,
-.right-pad:hover,
-.bottom-pad:hover {
-}*/
-
-
 /*keyframes and animation*/
 @keyframes heart {
-  0%{
+  0% {
     transform: scale(0);
   }
   30% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
   60% {
     transform: scale(.9);
@@ -342,7 +375,7 @@ h2:hover {
 
 @keyframes letter-show {
   0% {
-     fill: #7c5133;
+    fill: #7c5133;
   }
   100% {
     fill: #EAAA7F;
@@ -396,56 +429,52 @@ h2:hover {
     transform: rotate(12.5deg);
   }
   100% {
-    transform:rotate(0);
+    transform: rotate(0);
   }
 }
 
 @keyframes pads {
   0% {
     stroke: red;
-    stroke-width:2px;
+    stroke-width: 2px;
   }
 }
-@keyframes brows {
-  0% {
-    transform: skewY(2deg);
-  }
-  /*30% {
-    transform: translateY(-5deg);
-  }
-  60% {
-    transform: translateY(-10deg);
-  }*/
 
+@keyframes brows {
+  0 {
+    transform: skewY(-3deg);
+  }
+  50% {
+    transform: skewY(-8deg);
+  }
   100% {
-    transform: skewY(-10deg);
+    transform: skewY(0deg);
   }
 }
+
 .paw-template {
   display: none;
 }
 
-.dog-stone-svg, .dog-red-svg, .dog-fawn-svg, .dog-sable-svg{
+.dog-stone-svg, .dog-red-svg, .dog-fawn-svg, .dog-sable-svg {
   transform-origin: 50% 50%;
   display: block;
   margin: 0 auto;
   max-width: 150px;
 }
+
 .dog-stone-svg:hover {
   animation: head-tilt 2s linear forwards;
-}
-
- .dog-template .brows {
-  color: red;
-  transform: skewY(-10deg);
 }
 
 .dog-red-svg:hover {
   animation: head-tilt 2s linear forwards;
 }
+
 .dog-fawn-svg:hover {
   animation: head-tilt 2s linear forwards;
 }
+
 .dog-sable-svg:hover {
   animation: head-tilt 2s linear forwards;
 }
@@ -467,7 +496,7 @@ section svg {
 
 .test {
   animation: paw-fade 7s linear forwards infinite;
-  transform: translate(10px,35px) rotate(5deg);
+  transform: translate(10px, 35px) rotate(5deg);
 }
 
 .footer-paw {
@@ -479,43 +508,39 @@ section svg {
 
 span {
   text-align: center;
-font-family: roboto;
-font-weight: 300;
-font-size: 16px;
-color:#e9aa82;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 16px;
+  color: #e9aa82;
 }
 
 span:hover {
-  color:#52595e;
+  color: #52595e;
   cursor: pointer;
-  transform:scale(1.1);
-
+  transform: scale(1.1);
 }
 
-@media (min-width:425px){
-  .logo-svg-text{
-    display:inline;
+@media (min-width:425px) {
+  .logo-svg-text {
+    display: inline;
   }
   .logo-header-text {
     display: none;
   }
-
 }
 
-
-@media (min-width:768px){
-.dog-faces li {
-  display: inline-block;
-  padding: 0 5px;
-}
-.dog-faces:hover li {
-  cursor:pointer;
-}
-header nav {
-  text-align: left;
-}
-a {
-  font-size: 14px;
-}
-
+@media (min-width:768px) {
+  .dog-faces li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .dog-faces:hover li {
+    cursor: pointer;
+  }
+  header nav {
+    text-align: left;
+  }
+  a {
+    font-size: 14px;
+  }
 }
