@@ -96,6 +96,7 @@ footer {
 .fav:hover .heart .st0, .fav:hover a {
   fill: red;
   color: #b97f5b;
+  animation: heart 1s ease-out forwards infinite;
 }
 
 .con:hover .contact .st0, .con:hover a {
@@ -112,10 +113,9 @@ footer {
   fill: #e9aa82;
   color: #b97f5b;
   transform-origin: 50% 50%;
-  transform: scale(.80);
-  transform: rotate(-90deg);
   stroke: black;
   stroke-width: 2;
+  animation: icon 5s linear forwards;
 }
 
 .heart .st0 {
@@ -373,6 +373,21 @@ h2:hover {
   }
 }
 
+@keyframes icon {
+  0%{
+  transform: scale(.80);
+  transform: rotate(-90deg);
+}
+50% {
+  transform: scale(.80);
+  transform: rotate(-1800deg);
+}
+100% {
+  transform: scale(.80);
+  transform: rotate(-360deg);
+}
+
+}
 @keyframes letter-show {
   0% {
     fill: #7c5133;
